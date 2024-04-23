@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'employee.apps.EmployeeConfig',
     'rest_framework',
-    'corsheaders',
+   
 ]
 
 MIDDLEWARE = [
@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.CorsMiddleware'
+    
 ]
 
 CORS_ALLOWED_ORIGIN =(

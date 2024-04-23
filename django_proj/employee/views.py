@@ -34,7 +34,7 @@ class EmployeeViewSet(viewsets.ModelViewSet):
     
     def post_data(self, request):
         try:
-            serializer = self.get.serializer(data=request.data)
+            serializer = self.get_serializer(data=request.data)
             if serializer.is_valid():
                 serializer.save()
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
